@@ -3,80 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>pSX Emulator</title>
-    <style>
-        body {
-            background-color: #3333CC;
-            color: #FFFFFF;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-
-        nav {
-            background-color: #222299;
-            padding: 15px;
-            width: 200px;
-        }
-
-        nav a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            margin-bottom: 10px;
-        }
-
-        main {
-            padding: 20px;
-            flex: 1;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: row;
-        }
-
-        hr {
-            border: 0;
-            height: 1px;
-            background: #FFFFFF;
-            margin: 20px 0;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        a.download-link {
-            color: #FF5555;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-
-            nav {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <header>
-        <img src="psx_emulator_title.gif" alt="pSX Emulator">
+        <img src="images/psx_emulator_title.gif" alt="pSX Emulator">
     </header>
 
     <div class="container">
@@ -95,31 +27,31 @@
 
             <h3>Downloads for Windows:</h3>
             <ul>
-                <li><a class="download-link" href="/pSX_1_13.rar">pSX v1.13 (latest)</a></li>
-                <li><a class="download-link" href="/pSX_1_12.rar">pSX v1.12</a></li>
-                <li><a class="download-link" href="/psxfin_wip.rar">pSX v1.12 WIP</a></li>
-                <li><a class="download-link" href="/pSX_1_11.rar">pSX v1.11</a></li>
-                <li><a class="download-link" href="/pSX_1_10.rar">pSX v1.10</a></li>
-                <li><a class="download-link" href="/pSX_1_9.rar">pSX v1.9</a></li>
-                <li><a class="download-link" href="/pSX_1_8.rar">pSX v1.8</a></li>
-                <li><a class="download-link" href="/pSX_1_7.rar">pSX v1.7</a></li>
-                <li><a class="download-link" href="/pSX_1_6.rar">pSX v1.6</a></li>
-                <li><a class="download-link" href="/pSX_1_5.rar">pSX v1.5</a></li>
-                <li><a class="download-link" href="/pSX_1_4.rar">pSX v1.4</a></li>
-                <li><a class="download-link" href="/pSX_1_3.rar">pSX v1.3</a></li>
-                <li><a class="download-link" href="/pSX_1_2.rar">pSX v1.2</a></li>
-                <li><a class="download-link" href="/pSX_1_1.rar">pSX v1.1</a></li>
-                <li><a class="download-link" href="/pSX_1_0.rar">pSX v1.0</a></li>
-                <li><a class="download-link" href="/psxrel.rar">Debug version with logging support</a></li>
-                <li><a class="download-link" href="/readme.txt">Readme</a></li>
+                <li><a class="download-link" href="files/windows/pSX_1_13.rar">pSX v1.13 (latest)</a></li>
+                <li><a class="download-link" href="files/windows/pSX_1_12.rar">pSX v1.12</a></li>
+                <li><a class="download-link" href="files/windows/psxfin_wip.rar">pSX v1.12 WIP</a></li>
+                <li><a class="download-link" href="files/windows/pSX_1_11.rar">pSX v1.11</a></li>
+                <li><a class="download-link" href="files/windows/pSX_1_10.rar">pSX v1.10</a></li>
+                <li><a class="download-link" href="files/windows/pSX_1_9.rar">pSX v1.9</a></li>
+                <li><a class="download-link" href="files/windows/pSX_1_8.rar">pSX v1.8</a></li>
+                <li><a class="download-link" href="files/windows/pSX_1_7.rar">pSX v1.7</a></li>
+                <li><a class="download-link" href="files/windows/pSX_1_6.rar">pSX v1.6</a></li>
+                <li><a class="download-link" href="files/windows/pSX_1_5.rar">pSX v1.5</a></li>
+                <li><a class="download-link" href="files/windows/pSX_1_4.rar">pSX v1.4</a></li>
+                <li><a class="download-link" href="files/windows/pSX_1_3.rar">pSX v1.3</a></li>
+                <li><a class="download-link" href="files/windows/pSX_1_2.rar">pSX v1.2</a></li>
+                <li><a class="download-link" href="files/windows/pSX_1_1.rar">pSX v1.1</a></li>
+                <li><a class="download-link" href="files/windows/pSX_1_0.rar">pSX v1.0</a></li>
+                <li><a class="download-link" href="files/windows/psxrel.rar">Debug version with logging support</a></li>
+                <li><a class="download-link" href="files/readme.txt">Readme</a></li>
             </ul>
 
             <h3>Downloads for Linux:</h3>
             <ul>
-                <li><a class="download-link" href="/pSX_linux_1_13.tar.bz2">pSX v1.13</a></li>
-                <li><a class="download-link" href="/pSX_linux_1_12.tar.bz2">pSX v1.12</a></li>
-                <li><a class="download-link" href="/pSX_linux_1_11.tar.bz2">pSX v1.11</a></li>
-                <li><a class="download-link" href="/readme.txt">Readme</a></li>
+                <li><a class="download-link" href="files/linux/pSX_linux_1_13.tar.bz2">pSX v1.13</a></li>
+                <li><a class="download-link" href="files/linux/pSX_linux_1_12.tar.bz2">pSX v1.12</a></li>
+                <li><a class="download-link" href="files/linux/pSX_linux_1_11.tar.bz2">pSX v1.11</a></li>
+                <li><a class="download-link" href="files/readme.txt">Readme</a></li>
             </ul>
 
             <hr>
