@@ -1,92 +1,149 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pSX Emulator</title>
+    <style>
+        body {
+            background-color: #3333CC;
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-	<head>
-		<title>pSX emulator</title>
-	</head>
+        header {
+            text-align: center;
+            padding: 20px;
+        }
 
-	<body bgcolor="#3333CC">
+        nav {
+            background-color: #222299;
+            padding: 15px;
+            width: 200px;
+        }
 
-		<table>
-			<tr>
-				<td colspan='2'>	
-					<p align="center">
-						<img src='psx_emulator_title.gif'/>
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td valign='top' width='100'>
-					<p><a href='screenshots.html'><font color="#FFFFFF">Screenshots</font></a></p>
-					<p><a href='https://psxemulator.proboards.com/'><font color="#FFFFFF">Forum</font></a></p>
-					<p><a href='mailto:psxemulator@googlemail.com'><font color="#FFFFFF">Contact</font></a></p>
-				</td>
-				<td valign='top'>
-					<font color="#FFFFFF">
-						<hr>
-				
-						<p align="left">
-							This emulator fully emulates the Sony Playstation.  Compatibility is fairly high, most games I've tried work well.  
-						</p>
-			
-						<p align="left">
-							An R3000 debugger is contained which may be of interest to people working on translations.
-						</p>
-			
-						<hr>
-				
-						<p align="left">
-							Downloads for Windows:
-						</p>
-			
-						<li><a href='/pSX_1_13.rar'><font color="#FF0000">pSX v1.13 (latest)</font></a>
-						<li><a href='/pSX_1_12.rar'><font color="#FF0000">pSX v1.12</font></a>
-						<li><a href='/psxfin_wip.rar'><font color="#FF0000">pSX v1.12 WIP</font></a>
-						<li><a href='/pSX_1_11.rar'><font color="#FF0000">pSX v1.11</font></a>
-						<li><a href='/pSX_1_10.rar'><font color="#FF0000">pSX v1.10</font></a>
-						<li><a href='/pSX_1_9.rar'><font color="#FF0000">pSX v1.9</font></a>
-						<li><a href='/pSX_1_8.rar'><font color="#FF0000">pSX v1.8</font></a>
-						<li><a href='/pSX_1_7.rar'><font color="#FF0000">pSX v1.7</font></a>
-						<li><a href='/pSX_1_6.rar'><font color="#FF0000">pSX v1.6</font></a>
-						<li><a href='/pSX_1_5.rar'><font color="#FF0000">pSX v1.5</font></a>
-						<li><a href='/pSX_1_4.rar'><font color="#FF0000">pSX v1.4</font></a>
-						<li><a href='/pSX_1_3.rar'><font color="#FF0000">pSX v1.3</font></a>
-						<li><a href='/pSX_1_2.rar'><font color="#FF0000">pSX v1.2</font></a>
-						<li><a href='/pSX_1_1.rar'><font color="#FF0000">pSX v1.1</font></a>
-						<li><a href='/pSX_1_0.rar'><font color="#FF0000">pSX v1.0</font></a>
-						<li><a href='/psxrel.rar'><font color="#FF0000">pSX Debug version with logging support</font></a>
-						<li><a href='/readme.txt'><font color="#FF0000">Readme</font></a>
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
 
-						<p align="left">
-							Downloads for Linux:
-						</p>
-						
-						<li><a href='/pSX_linux_1_13.tar.bz2'><font color="#FF0000">pSX v1.13</font></a>
-						<li><a href='/pSX_linux_1_12.tar.bz2'><font color="#FF0000">pSX v1.12</font></a>
-						<li><a href='/pSX_linux_1_11.tar.bz2'><font color="#FF0000">pSX v1.11</font></a>
-						<li><a href='/readme.txt'><font color="#FF0000">Readme</font></a>
+        main {
+            padding: 20px;
+            flex: 1;
+        }
 
-						<p align="left">
-							Note: you will need a PS1 BIOS image (not supplied) - it should be called SCPH1001.bin and placed in the bios folder of the emulator.
-						</p>
-			
-						<p align="left">
-							If you get an error message saying d3dx9_26.dll is missing you can try downloading it from 
-							<a href='https://dll-files.com/d3dx9_26.dll.html'><font color="#FF0000">here</font></a>
-						</p>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
 
-						<hr>
-						<p align="left">
-							A relatively up to date <a href='https://web.archive.org/web/20130521005433/http://psx.silvanthalas.com/'><font color="#FFFFFF">compatibility list</font></a> is maintained by smegforbrain.			
-						</p>
+        hr {
+            border: 0;
+            height: 1px;
+            background: #FFFFFF;
+            margin: 20px 0;
+        }
 
-					        <hr>
-					        <p align="left">
-							Website made by pSX Author and improved by lvplay2. You can see the source code of this website 
-							<a href='https://github.com/lvplay2/psxfin-website'><font color="#FF0000">here</font></a>
-						</p>
-					</font>
-				</td>
-			</tr>
-		</table>
-	</body>
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        a.download-link {
+            color: #FF5555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            nav {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="psx_emulator_title.gif" alt="pSX Emulator">
+    </header>
+
+    <div class="container">
+        <nav>
+            <a href="screenshots.html">Screenshots</a>
+            <a href="https://psxemulator.proboards.com/">Forum</a>
+            <a href="mailto:psxemulator@googlemail.com">Contact</a>
+        </nav>
+
+        <main>
+            <p>This emulator fully emulates the Sony PlayStation. Compatibility is high—most games work well.</p>
+
+            <p>It includes an R3000 debugger, which may be helpful for translation projects.</p>
+
+            <hr>
+
+            <h3>Downloads for Windows:</h3>
+            <ul>
+                <li><a class="download-link" href="/pSX_1_13.rar">pSX v1.13 (latest)</a></li>
+                <li><a class="download-link" href="/pSX_1_12.rar">pSX v1.12</a></li>
+                <li><a class="download-link" href="/psxfin_wip.rar">pSX v1.12 WIP</a></li>
+                <li><a class="download-link" href="/pSX_1_11.rar">pSX v1.11</a></li>
+                <li><a class="download-link" href="/pSX_1_10.rar">pSX v1.10</a></li>
+                <li><a class="download-link" href="/pSX_1_9.rar">pSX v1.9</a></li>
+                <li><a class="download-link" href="/pSX_1_8.rar">pSX v1.8</a></li>
+                <li><a class="download-link" href="/pSX_1_7.rar">pSX v1.7</a></li>
+                <li><a class="download-link" href="/pSX_1_6.rar">pSX v1.6</a></li>
+                <li><a class="download-link" href="/pSX_1_5.rar">pSX v1.5</a></li>
+                <li><a class="download-link" href="/pSX_1_4.rar">pSX v1.4</a></li>
+                <li><a class="download-link" href="/pSX_1_3.rar">pSX v1.3</a></li>
+                <li><a class="download-link" href="/pSX_1_2.rar">pSX v1.2</a></li>
+                <li><a class="download-link" href="/pSX_1_1.rar">pSX v1.1</a></li>
+                <li><a class="download-link" href="/pSX_1_0.rar">pSX v1.0</a></li>
+                <li><a class="download-link" href="/psxrel.rar">Debug version with logging support</a></li>
+                <li><a class="download-link" href="/readme.txt">Readme</a></li>
+            </ul>
+
+            <h3>Downloads for Linux:</h3>
+            <ul>
+                <li><a class="download-link" href="/pSX_linux_1_13.tar.bz2">pSX v1.13</a></li>
+                <li><a class="download-link" href="/pSX_linux_1_12.tar.bz2">pSX v1.12</a></li>
+                <li><a class="download-link" href="/pSX_linux_1_11.tar.bz2">pSX v1.11</a></li>
+                <li><a class="download-link" href="/readme.txt">Readme</a></li>
+            </ul>
+
+            <hr>
+
+            <p><strong>Note:</strong> You'll need a PS1 BIOS image (not included). It should be named <code>SCPH1001.bin</code> and placed in the <code>bios</code> folder.</p>
+
+            <p>If you encounter a missing <code>d3dx9_26.dll</code> error, you can download it 
+                <a class="download-link" href="https://dll-files.com/d3dx9_26.dll.html">here</a>.
+            </p>
+
+            <hr>
+
+            <p>A relatively up-to-date 
+                <a href="https://web.archive.org/web/20130521005433/http://psx.silvanthalas.com/">compatibility list</a> 
+                is maintained by smegforbrain.
+            </p>
+
+            <hr>
+
+            <footer>
+                Website made by pSX Author, improved by lvplay2.<br>
+                <a class="download-link" href="https://github.com/lvplay2/psxfin-website">Source code on GitHub</a>
+            </footer>
+        </main>
+    </div>
+</body>
 </html>
