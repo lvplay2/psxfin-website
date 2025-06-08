@@ -1,4 +1,23 @@
-// pages/screenshots.tsx
+/*++
+
+Copyright (c) 2025 lvplay2
+
+Module Name:
+
+    screenshots.tsx
+
+Abstract:
+
+    The screenshots section.
+
+Author:
+
+    lvplay2
+
+Revision History:
+
+--*/
+
 import Head from 'next/head'
 import styles from '../styles/Screenshots.module.css'
 
