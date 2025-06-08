@@ -1,49 +1,55 @@
-/* styles/Home.module.css */
-
-.header {
-  text-align: center;
-  padding: 20px;
-}
-
-.nav {
-  background-color: #222299;
-  padding: 15px;
-  width: 200px;
-}
-
-.nav a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
-
-.main {
-  padding: 20px;
-  flex: 1;
-}
-
 .container {
-  display: flex;
-  flex-direction: row;
-}
-
-.downloadLink {
-  color: #ff5555;
-}
-
-.footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
+    display: flex;
+    flex-direction: row;
 }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
+    .container {
+        flex-direction: column;
+    }
+}
 
-  .nav {
-    width: 100%;
-  }
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.nav {
+    background-color: #222299;
+    padding: 15px;
+    width: 200px;
+}
+
+.nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.main {
+    padding: 20px;
+    flex: 1;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #FFFFFF;
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.downloadLink {
+    color: #FF5555;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
 }
