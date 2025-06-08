@@ -80,7 +80,7 @@ export default function Home() {
 
           <hr />
 
-          <p><strong>Note:</strong> You'll need a PS1 BIOS image (not included). It should be named <code>SCPH1001.bin</code> and placed in the <code>bios</code> folder.</p>
+          <p><strong>Note:</strong> You&#39;ll need a PS1 BIOS image (not included). It should be named <code>SCPH1001.bin</code> and placed in the <code>bios</code> folder.</p>
 
           <p>
             If you encounter a missing <code>d3dx9_26.dll</code> error, you can download it{" "}
