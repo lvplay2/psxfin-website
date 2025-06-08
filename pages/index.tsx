@@ -1,4 +1,23 @@
-// pages/index.tsx
+/*++
+
+Copyright (c) 2025 lvplay2
+
+Module Name:
+
+    index.tsx
+
+Abstract:
+
+    The homepage component.
+
+Author:
+
+    lvplay2
+
+Revision History:
+
+--*/
+
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
