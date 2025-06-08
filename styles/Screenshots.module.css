@@ -1,9 +1,3 @@
-/* styles/Screenshots.module.css */
-
-.container {
-  padding: 20px;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -15,12 +9,6 @@
   width: 100%;
   max-width: 640px;
   height: auto;
-  border: 3px solid #fff;
+  border: 3px solid #FFF;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 600px) {
-  :global(h1) {
-    font-size: 2em;
-  }
 }
