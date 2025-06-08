@@ -1,3 +1,23 @@
+/*++
+
+Copyright (c) 2025 lvplay2
+
+Module Name:
+
+    Home.module.css
+
+Abstract:
+
+    The homepage styles.
+
+Author:
+
+    lvplay2
+
+Revision History:
+
+--*/
+
 .container {
   display: flex;
   flex-direction: row;
