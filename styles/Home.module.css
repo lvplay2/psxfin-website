@@ -32,11 +32,6 @@
   flex: 1;
 }
 
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
 .downloadLink {
   color: #FF5555;
 }
