@@ -1,3 +1,23 @@
+/*++
+
+Copyright (c) 2025 lvplay2
+
+Module Name:
+
+    Screenshots.module.css
+
+Abstract:
+
+    The screenshots section styles.
+
+Author:
+
+    lvplay2
+
+Revision History:
+
+--*/
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
