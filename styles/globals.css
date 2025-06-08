@@ -1,4 +1,23 @@
-/* globals.css */
+/*++
+
+Copyright (c) 2025 lvplay2
+
+Module Name:
+
+    globals.css
+
+Abstract:
+
+    Global styles.
+
+Author:
+
+    lvplay2
+
+Revision History:
+
+--*/
+
 body {
   background-color: #3333CC;
   color: white;
