@@ -8,7 +8,7 @@ Module Name:
 
 Abstract:
 
-    The homepage component.
+    The homepage.
 
 Author:
 
